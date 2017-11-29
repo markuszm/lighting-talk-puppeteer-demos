@@ -29,9 +29,9 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['HeadlessChrome'],
+    browsers: ['ChromeHeadlessWithRemoteDebugging'],
     customLaunchers: {
-      HeadlessChrome: {
+      ChromeHeadlessWithRemoteDebugging: {
         base: 'ChromeHeadless',
         flags: ['--remote-debugging-port=9222']
       }
